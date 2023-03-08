@@ -2,8 +2,9 @@ name: Deploy test-deploy
 on: [push]
 jobs:
   Deploy:
-    - uses: appleboy/ssh-action@v0.1.8
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@v0.1.8
       with:
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USER }}
-        password: ${{ secrets.SSH_PWD }}
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USER }}
+        password: ${{ secrets.PWD }}
