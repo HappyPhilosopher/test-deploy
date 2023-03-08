@@ -1,6 +1,7 @@
 <template>
   <h1>Welcome to pigtest-cli home page.</h1>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld />
+  
 </template>
 
 <script>

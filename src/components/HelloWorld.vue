@@ -63,7 +63,7 @@ const form = reactive({
 })
 
 const onSubmit = () => {
-  console.log('submit!')
+  console.log('submit success!')
 }
 </script>
 
