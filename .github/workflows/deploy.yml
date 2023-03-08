@@ -10,3 +10,8 @@ jobs:
           username: ${{ secrets.USER }}
           password: ${{ secrets.PWD }}
           script_stop: true
+          script: |
+            ls -al
+            touch test.txt
+            echo 'hello world' >> test.txt
+            cat test.txt
